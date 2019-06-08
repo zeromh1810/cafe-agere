@@ -1,0 +1,39 @@
+button {
+    font-family: $mono;
+}
+
+.primary-button {
+    font-size: $medium;
+    background-color: $white;
+    border: 1px solid $quick-silver;
+    color: $quick-silver;
+    padding: 10px;
+    transition: .5s ease;
+    display: inline-block;
+    margin: 0 10px;
+
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+    }
+
+    &--secondary {
+        @extend .primary-button;
+        background-color: $shiny-shamrock;
+        color: $white;
+
+        &:hover {
+            background-color: $pastel-gray;
+            color: $outer-space;
+        }
+    }
+}
+
+.link {
+    color: $quick-silver;
+    transition: .3s ease;
+
+    &:hover {
+        color: $black;
+    }
+}
